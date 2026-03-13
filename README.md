@@ -30,7 +30,7 @@ v1.2.0 (13/03/2026)
 
 ## Installation
 1. [Download the latest release](https://www.avathar.be/forum/app.php/dlext/details?df_id=41) and unzip it.
-2. Copy the entire contents from the unzipped folder to `/ext/avathar/quicklogin/`.
+2. Copy the entire contents from the unzipped folder to `/ext`. so that you get `/ext/avathar/quicklogin/`
 3. Navigate in the ACP to `Customise -> Manage extensions`.
 4. Find `Quick Login` under "Disabled Extensions" and click `Enable`.
 
