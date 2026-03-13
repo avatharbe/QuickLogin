@@ -14,8 +14,8 @@ v1.2.0 (13/03/2026)
 - Changes the behaviour of the normal login button in the header.
 - Only activates on pages where there is no normal login form (not when trying to access the UCP for example).
 
-![Screenshot](screenshot.png)
-![Screenshot](screenshot-pbwow3.png)
+![Screenshot](contrib/screenshot.png)
+![Screenshot](contrib/screenshot-pbwow3.png)
 
 #### Requirements
 - phpBB 3.3.0 or higher
