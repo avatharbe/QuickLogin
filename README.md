@@ -26,7 +26,7 @@ v1.2.0 (13/03/2026)
 
 #### Styles supported
 - Prosilver derived styles
-- pbWoW3.2 
+- pbWoW3
 
 ## Installation
 1. [Download the latest release](https://www.avathar.be/forum/app.php/dlext/details?df_id=41) and unzip it.
