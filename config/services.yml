@@ -1,6 +1,6 @@
 services:
-    paybas.quicklogin.listener:
-        class: paybas\quicklogin\event\listener
+    avathar.quicklogin.listener:
+        class: avathar\quicklogin\event\listener
         arguments:
             - '@auth.provider_collection'
             - '@config'

@@ -1,13 +1,13 @@
-Quick Login for phpBB 3.2
+Quick Login for phpBB 3.3
 =========================
 
-Extension for phpBB 3.2 that adds a simple quick login popup lightbox using JavaScript.
+Extension for phpBB 3.3 that adds a simple quick login popup lightbox using JavaScript.
 
 #### Version
-v1.1.3 (25/07/2020) [![Build Status](https://api.travis-ci.org/Sajaki/QuickLogin.svg)](https://travis-ci.org/Sajaki/QuickLogin)
+v1.2.0 (13/03/2026) 
 
 #### Support
-- [Support forum](http://www.avathar.be/forum/viewforum.php?f=65)
+- [Support forum](http://www.avathar.be/forum/viewforum.php?f=16)
 
 ## Features
 - A simple lightbox popup for quick login actions.
@@ -18,7 +18,7 @@ v1.1.3 (25/07/2020) [![Build Status](https://api.travis-ci.org/Sajaki/QuickLogin
 ![Screenshot](screenshot-pbwow3.png)
 
 #### Requirements
-- phpBB 3.2.0 or higher
+- phpBB 3.3.0 or higher
 
 #### Languages supported
 - No language files included/necessary
@@ -29,15 +29,15 @@ v1.1.3 (25/07/2020) [![Build Status](https://api.travis-ci.org/Sajaki/QuickLogin
 - pbWoW3.2 
 
 ## Installation
-1. [Download the latest release](https://github.com/Sajaki/QuickLogin/releases) and unzip it.
-2. Copy the entire contents from the unzipped folder to `/ext/paybas/quicklogin/`.
+1. [Download the latest release](https://www.avathar.be/forum/app.php/dlext/details?df_id=41) and unzip it.
+2. Copy the entire contents from the unzipped folder to `/ext/avathar/quicklogin/`.
 3. Navigate in the ACP to `Customise -> Manage extensions`.
 4. Find `Quick Login` under "Disabled Extensions" and click `Enable`.
 
 ## Uninstallation
 1. Navigate in the ACP to `Customise -> Manage extensions`.
 2. Click the `Disable` link for `Quick Login`.
-3. To permanently uninstall, click `Delete Data`, then delete the `quicklogin` folder from `/ext/paybas/`.
+3. To permanently uninstall, click `Delete Data`, then delete the `quicklogin` folder from `/ext/avathar/`.
 
 ### License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
