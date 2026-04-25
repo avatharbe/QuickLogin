@@ -1,3 +1,7 @@
-#quick-login-panel .ql-username label {
-  background: url("./login-account.gif") no-repeat 0 0;
+#quick-login-panel .ql-username div label {
+    background: url("./login-account.gif") no-repeat 0 0;
+}
+
+#quick-login-panel .ql-password div label {
+    background: url("./login-password.gif") no-repeat 0 0;
 }

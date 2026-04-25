@@ -4,7 +4,7 @@ Quick Login for phpBB 3.3
 Extension for phpBB 3.3 that adds a simple quick login popup lightbox using JavaScript.
 
 #### Version
-v1.2.0 (13/03/2026) 
+v1.2.1 (25/04/2026) 
 
 #### Support
 - [Support forum](http://www.avathar.be/forum/viewforum.php?f=16)

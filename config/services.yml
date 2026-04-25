@@ -4,6 +4,7 @@ services:
         arguments:
             - '@auth.provider_collection'
             - '@config'
+            - '@controller.helper'
             - '@template'
             - '@user'
             - '%core.root_path%'

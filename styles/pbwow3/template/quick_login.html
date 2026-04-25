@@ -16,7 +16,7 @@
 					<div>
 						<label for="ql-password"></label>
 						<input type="password" tabindex="2" id="ql-password" name="password" size="25" class="inputbox autowidth" />
-						{% if U_SEND_PASSWORD_EXT %}<dd class="input-link"><a href="{{ U_SEND_PASSWORD_EXT }}">{{ lang('FORGOT_PASS') }}</a></dd>{% endif %}
+						{% if U_SEND_PASSWORD_EXT %}<span class="input-link"><a href="{{ U_SEND_PASSWORD_EXT }}">{{ lang('FORGOT_PASS') }}</a></span>{% endif %}
 					</div>
 				</div>
 				{% if CAPTCHA_TEMPLATE and S_CONFIRM_CODE %}

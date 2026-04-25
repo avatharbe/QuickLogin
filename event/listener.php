@@ -16,6 +16,7 @@ namespace avathar\quicklogin\event;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use phpbb\auth\provider_collection;
 use phpbb\config\config;
+use phpbb\controller\helper;
 use phpbb\template\template;
 use phpbb\user;
 
@@ -29,6 +30,9 @@ class listener implements EventSubscriberInterface
 
 	/** @var \phpbb\config\config */
 	protected $config;
+
+	/** @var \phpbb\controller\helper */
+	protected $controller_helper;
 
 	/** @var \phpbb\template\template */
 	protected $template;
@@ -47,6 +51,7 @@ class listener implements EventSubscriberInterface
 	 *
 	 * @param \phpbb\auth\provider_collection $auth_provider_collection auth object
 	 * @param \phpbb\config\config            $config                   phpBB config
+	 * @param \phpbb\controller\helper        $controller_helper        Controller helper
 	 * @param \phpbb\template\template        $template                 phpBB template
 	 * @param \phpbb\user                     $user                     User object
 	 * @param                                 $root_path                phpBB root path
@@ -54,10 +59,11 @@ class listener implements EventSubscriberInterface
 	 *
 	 * @access public
 	 */
-	public function __construct(provider_collection $auth_provider_collection, config $config, template $template, user $user, $root_path, $phpEx)
+	public function __construct(provider_collection $auth_provider_collection, config $config, helper $controller_helper, template $template, user $user, $root_path, $phpEx)
 	{
 		$this->auth_provider_collection	= $auth_provider_collection;
 		$this->config    				= $config;
+		$this->controller_helper		= $controller_helper;
 		$this->template  				= $template;
 		$this->user                     = $user;
 		$this->root_path 				= $root_path;
@@ -110,7 +116,7 @@ class listener implements EventSubscriberInterface
 
 			$tpl_vars = array(
 				'S_QUICK_LOGIN'       => true,
-				'U_SEND_PASSWORD_EXT' => ($this->config['email_enable']) ? append_sid("{$this->root_path}ucp.$this->phpEx", 'mode=sendpassword') : '',
+				'U_SEND_PASSWORD_EXT' => ($this->config['email_enable'] && $this->config['allow_password_reset']) ? $this->controller_helper->route('phpbb_ucp_forgot_password_controller') : '',
 			);
 
 			$this->template->assign_vars($tpl_vars);

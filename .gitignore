@@ -3,3 +3,5 @@
 .idea
 phpunit.xml.dist
 /composer.lock
+.DS_Store
+.claude/settings.local.json

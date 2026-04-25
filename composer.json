@@ -3,8 +3,8 @@
   "type": "phpbb-extension",
   "description": "Adds a simple quick login popup lightbox using JavaScript",
   "homepage": "https://github.com/avatharbe/QuickLogin",
-  "version": "1.2.0",
-  "time": "2026-03-13",
+  "version": "1.2.1",
+  "time": "2026-04-25",
   "license": "GPL-2.0-only",
   "authors": [
     {

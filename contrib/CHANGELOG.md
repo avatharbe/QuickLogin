@@ -1,5 +1,10 @@
 ### Changelog
 
+- 1.2.1 (25/04/2026)
+  - [FIX] "Forgot password" link now checks `allow_password_reset` config setting
+  - [FIX] "Forgot password" URL uses phpBB 3.3 controller route instead of legacy `ucp.php?mode=sendpassword`
+  - [FIX] Invalid HTML in pbwow3 template — `<dd>` used outside `<dl>` structure
+  - [FIX] Russian theme CSS selector inconsistency and missing password icon rule
 - 1.2.0 (13/03/2026)
   - [UPD] Updated for phpBB 3.3.x
 - 1.1.4 (26/07/2020)
